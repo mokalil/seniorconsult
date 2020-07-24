@@ -1,49 +1,153 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<title>RegistrationForm_v6 by Colorlib</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-		<!-- MATERIAL DESIGN ICONIC FONT -->
-		<link rel="stylesheet" href="fonts/material-design-iconic-font.min.css">
-		
-		<!-- STYLE CSS -->
-		<link rel="stylesheet" href="css/reqs-style.css">
-	</head>
 
-	<body>
-<div class="container-fluid mt-5 mb-5">
-	<div class="row">
-		<div class="wrapper col-12 col-md-8 col-lg-6 offset-md-2 offset-lg-3">
-			<div class="inner">
-				<div class="image-holder">
-					<img src="images/senior.jpeg" alt="">
+<head>
+	<meta charset="utf-8">
+	<title>RegistrationForm_v6 by Colorlib</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<!-- MATERIAL DESIGN ICONIC FONT -->
+	<link rel="stylesheet" href="fonts/material-design-iconic-font.min.css">
+	<style>
+		body {
+			background-image: url("images/wallpaper/op03-01.png");
+			background-repeat: repeat;
+			background-position: top left;
+			background-size: contain;
+		}
+
+		.img-main {
+			width: 200px;
+			height: 200px;
+		}
+
+		.image-holder {
+			border-radius: 50%;
+
+			width: 200px;
+			height: 200px;
+		}
+
+		.main-form {
+			background-color: whitesmoke;
+			border-radius: 50px;
+			padding: 20px 0px;
+		}
+
+		input,
+		textarea,
+		select,
+		button {
+			font-family: "Montserrat-Regular";
+			font-size: 15px;
+			color: #666;
+		}
+
+		button {
+			height: 47px;
+			width: 174px;
+			display: flex;
+			border: none;
+			color: #fff;
+			align-items: center;
+			justify-content: center;
+			margin: auto;
+			margin-top: 30px;
+			cursor: pointer;
+			font-family: "Montserrat-Medium";
+			text-transform: uppercase;
+			background: #84cde1;
+			border-radius: 5px;
+			-webkit-transform: perspective(1px) translateZ(0);
+			transform: perspective(1px) translateZ(0);
+			overflow: hidden;
+			-webkit-transition-duration: 0.5s;
+			transition-duration: 0.5s;
+			-webkit-transition-property: color, background-color;
+			transition-property: color, background-color;
+		}
+
+		button i {
+			margin-left: 8px;
+			-webkit-transform: translateZ(0);
+			transform: translateZ(0);
+		}
+
+		button:hover {
+			-webkit-animation-name: hvr-back-pulse;
+			animation-name: hvr-back-pulse;
+			-webkit-animation-duration: 1s;
+			animation-duration: 1s;
+			-webkit-animation-delay: 0.5s;
+			animation-delay: 0.5s;
+			-webkit-animation-timing-function: linear;
+			animation-timing-function: linear;
+			-webkit-animation-iteration-count: infinite;
+			animation-iteration-count: infinite;
+			background-color: #17c8f8;
+			color: white;
+		}
+
+		button:hover i {
+			-webkit-animation-name: hvr-icon-buzz-out;
+			animation-name: hvr-icon-buzz-out;
+			-webkit-animation-duration: 0.75s;
+			animation-duration: 0.75s;
+			-webkit-animation-timing-function: linear;
+			animation-timing-function: linear;
+			-webkit-animation-iteration-count: infinite;
+			animation-iteration-count: infinite;
+		}
+	</style>
+	<!-- STYLE CSS -->
+	<!-- <link rel="stylesheet" href="css/reqs-style.css"> -->
+</head>
+
+<body>
+	<div class="container mt-5 mb-5 main-form col-12 col-sm-8 col-lg-6">
+		<div class="row">
+			<div class="col-12 justify-content-center d-flex">
+				<div class="image-holder ">
+					<img src="images/logo/senior1.png" alt="" class="img-main">
 				</div>
-				<form action="" method="POST" enctype="multipart/form-data">
-					<h3>Make Your Request </h3>
-					<div class="form-row col-12">
-						<input type="text" class="form-control col-12 mb-2 mt-2" placeholder="Company Name" name="CompanyName" id="CompanyName" >
-						<input type="text" class="form-control col-12 mb-2 mt-2" placeholder="Name" name="Name" id="Name" >
-						<input type="text" class="form-control col-12 mb-2 mt-2" placeholder="Mail" name="Mail" id="Mail">
-					</div>
-					<div class="form-row col-12">
-						<input type="text" class="form-control col-12 mb-2 mt-2" placeholder="Phone">
-
-					</div>
-					<textarea name="Notes" id="Notes" placeholder="Message" class="form-control" style="height: 130px;"></textarea>
-					<button id="btn-request" name="btn-request">Request It now
-						<i class="zmdi zmdi-long-arrow-right"></i>
-					</button>
-				</form>
-				
 			</div>
+
+
+
+			<div class=" col-12 col-md-8 col-lg-6 offset-md-2 offset-lg-3">
+				<div class="text-center">
+
+					<form action="" method="POST" enctype="multipart/form-data">
+						<h3>Make Your Request </h3>
+						<div class="form-row col-12">
+							<input type="text" class="form-control col-12 mb-2 mt-2" placeholder="Company Name"
+								name="CompanyName" id="CompanyName">
+							<input type="text" class="form-control col-12 mb-2 mt-2" placeholder="Name" name="Name"
+								id="Name">
+							<input type="text" class="form-control col-12 mb-2 mt-2" placeholder="Mail" name="Mail"
+								id="Mail">
+						</div>
+						<div class="form-row col-12">
+							<input type="text" class="form-control col-12 mb-2 mt-2" placeholder="Phone">
+
+						</div>
+						<textarea name="Notes" id="Notes" placeholder="Message" class="form-control"
+							style="height: 130px;"></textarea>
+						<button id="btn-request" name="btn-request">Request It now
+							
+						</button>
+					</form>
+
+				</div>
+			</div>
+
+
 		</div>
-
 	</div>
-</div>
 
-		<script src="js/jquery.min.js"></script>
-		<script src="js/reqs-main.js"></script>
-	</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/reqs-main.js"></script>
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+
 </html>
