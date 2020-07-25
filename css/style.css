@@ -10005,3 +10005,44 @@ textarea.form-control {
     .request-demo .front-overlay{
       z-index: 99;
     }
+    /* khalil add-style */
+    .addres{font-size: 22px;
+      font-family: Roboto, sans-serif;
+      font-weight: 500;
+      margin-bottom: 22px;
+      text-transform: uppercase;
+      color: #eb566c;
+      display: inline-block;}
+      .addres2{
+        color: white;
+        font-family: Sarabun, sans-serif;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 1.2;
+      margin-bottom: 20px;
+     opacity: 50%;}
+      .addres3{opacity: 60%;
+       }
+       @media (max-width: 800px) {
+        .O-sm-0 {
+            display: block;
+            opacity: 0;
+            height: 0px; 
+            width: 0px;
+            margin: 0px;
+            padding: 0px;
+           
+           } }
+           @media (max-width: 1000px) {
+        .p-r-text {
+          position: relative; right: 300px;
+           } }
+           @media (min-width: 1000px) {
+            .p-r-text {
+              position: relative; right: 430px;
+              
+               } }
+           .logo-ml {
+            margin-left: 15px;
+           }
+/* end khalil style */
